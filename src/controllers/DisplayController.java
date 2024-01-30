@@ -121,7 +121,7 @@ public class DisplayController {
                     System.out.println("Transaction Type : "+ response.getInvoice().getTransactionMode());
                     System.out.println("Amount :" +exitTicket.getAmount());
                     System.out.println("Entry Time :"+response.getInvoice().getEntryTime().getHour()+":"+response.getInvoice().getEntryTime().getMinute());
-                    System.out.println("Entry Time :"+response.getInvoice().getExitTime().getHour()+":"+response.getInvoice().getExitTime().getMinute());
+                    System.out.println("Exit Time :"+response.getInvoice().getExitTime().getHour()+":"+response.getInvoice().getExitTime().getMinute());
                     System.out.println("------------------------------------");
                 }
                 catch(PaymentFailureException e)
